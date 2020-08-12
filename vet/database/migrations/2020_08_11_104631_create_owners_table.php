@@ -18,7 +18,8 @@ class CreateOwnersTable extends Migration
             $table->string('first_name', 15);
             $table->string('last_name', 15);
             $table->string('telephone', 11);
-            $table->string('email')->unique();
+            $table->string('email');
+            $table->timestamps();
         });
     }
 
