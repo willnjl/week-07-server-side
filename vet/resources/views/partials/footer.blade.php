@@ -1,0 +1,12 @@
+<footer>
+    <h3>
+        footer
+    </h3>
+    <ul>
+        <li>foot</li>
+        <li>foot</li>
+        <li>foot</li>
+        <li>foot</li>
+        <li>foot</li>
+    </ul>
+</footer>
