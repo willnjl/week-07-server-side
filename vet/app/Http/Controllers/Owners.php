@@ -16,6 +16,6 @@ class Owners extends Controller
             "owners" => $owners
         ];
 
-        return view("welcome", $data);
+        return view("owners", $data);
     }
 }
