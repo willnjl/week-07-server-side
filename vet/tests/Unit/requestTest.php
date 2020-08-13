@@ -4,7 +4,7 @@ namespace Tests\Unit;
 
 use Tests\TestCase;
 
-class http_request_test extends TestCase
+class requestTest extends TestCase
 {
 
     public function testBasicTest()
@@ -12,5 +12,12 @@ class http_request_test extends TestCase
         $response = $this->get('/');
 
         $response->assertStatus(200);
+    }
+
+    public function test404()
+    {
+        $response = $this->get('/blah');
+
+        $response->assertStatus(404);
     }
 }

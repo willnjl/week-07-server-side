@@ -13,11 +13,18 @@
 @endsection
 
 @section('body')
-<ul class="list-group">
-    @foreach(App\Owner::all() as $person)
-        <li class="list-group-item">
-        {{ $person->last_name}}, {{ $person->first_name }}
-        </li>
-    @endforeach
-</ul>
+    @if(count($owners) > 0)
+        <ul class="list-group">
+            @foreach($owners as $person)
+                <li class="list-group-item">
+                {{ $person->last_name}}, {{ $person->first_name }}
+                </li>
+            @endforeach
+        </ul>
+    @else
+        <p>
+            Sorry No Owners Found
+        </p>
+    
+    @endif
 @endsection

@@ -13,9 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', "Owners@index");
+
+// Route::get('/owners/{id}', function () {
+//     return view('owner');
+// });
 
 Route::get('/about', function () {
     return view('about');
