@@ -13,8 +13,12 @@
     @include("partials/nav")
 </section>
 <main>
-    @yield('welcome')  
+    <div class="container">
+      @yield('welcome') 
+    </div>
+    <div class="container">
     @yield('body')
+    </div> 
 </main>
 
 <section class="container">

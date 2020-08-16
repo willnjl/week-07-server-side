@@ -16,12 +16,11 @@ class Home extends Controller
             }else if($hour >= 12 && $hour < 17 ){
                 $greeting = "Good afternoon";
             }else if($hour >= 17){
-                $greeting = "Good afternoon";
+                $greeting = "Good Evening";
         }
 
         $data = [
-            "greeting" => $greeting,
-            "hour" => $hour
+            "greeting" => $greeting
         ];
 
         return view("welcome", $data);
